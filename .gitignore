@@ -1,7 +1,0 @@
-.gradle/
-build/
-run/
-runs/
-.idea/
-*.iml
-compat.json
