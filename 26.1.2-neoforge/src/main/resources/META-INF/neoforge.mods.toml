@@ -1,0 +1,34 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://modrinth.com/mod/discordpresence"
+
+[[mods]]
+modId = "zambielib"
+version = "1.0.0"
+displayName = "ZambieLib"
+logoFile = "icon.png"
+logoBlur = false
+authors = "ZambieD"
+description = '''
+The shared engine room for ZambieD's mods. Interface drawing in the vanilla
+style, save file handling with automatic backups, placeholder text expansion,
+and the collision math behind Broadback.
+
+You only need this because another mod asked for it. It adds nothing on its
+own.
+'''
+
+[[dependencies.zambielib]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1,26.2)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zambielib]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1,26.2)"
+ordering = "NONE"
+side = "BOTH"

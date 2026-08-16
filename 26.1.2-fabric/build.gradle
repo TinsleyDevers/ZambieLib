@@ -1,0 +1,24 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version '1.17.19'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(25)
+
+loom {
+    mods {
+        zambielib {
+            sourceSet sourceSets.main
+        }
+    }
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:26.1.2'
+    implementation 'net.fabricmc:fabric-loader:0.19.3'
+}
+
+base.archivesName = 'zambielib'
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

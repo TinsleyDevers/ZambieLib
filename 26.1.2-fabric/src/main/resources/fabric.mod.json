@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "zambielib",
+  "version": "1.0.0",
+  "name": "ZambieLib",
+  "description": "Shared internals for ZambieD's mods. Interface drawing, save file handling, placeholder text, and collision math. You only need this because another mod asked for it.",
+  "authors": [
+    "ZambieD"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/discordpresence"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.tinsl.zambielib.ZambieLib"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~26.1",
+    "java": ">=25"
+  }
+}

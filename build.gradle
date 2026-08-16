@@ -1,42 +1,7 @@
-plugins {
-    id 'java-library'
-    id 'maven-publish'
-    id 'net.neoforged.moddev' version '2.0.95'
+// ZambieLib multi-version root build. The version is set once here;
+// subprojects carry the per-target toolchains.
+
+allprojects {
+    version = '1.0.0'
+    group = 'com.tinsl.zambielib'
 }
-
-version = '1.0.0'
-group = 'com.tinsl.zambielib'
-
-base {
-    archivesName = 'zambielib'
-}
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
-}
-
-neoForge {
-    version = '21.1.248'
-
-    mods {
-        zambielib {
-            sourceSet sourceSets.main
-        }
-    }
-}
-
-tasks.withType(JavaCompile).configureEach {
-    options.encoding = 'UTF-8'
-}
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifactId = 'zambielib'
-            artifact tasks.named('jar')
-        }
-    }
-}
-
