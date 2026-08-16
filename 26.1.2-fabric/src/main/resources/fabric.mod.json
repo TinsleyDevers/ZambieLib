@@ -8,7 +8,9 @@
     "ZambieD"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/discordpresence"
+    "homepage": "https://modrinth.com/mod/zambielib",
+    "issues": "https://github.com/TinsleyDevers/ZambieLib/issues",
+    "sources": "https://github.com/TinsleyDevers/ZambieLib"
   },
   "license": "MIT",
   "icon": "icon.png",

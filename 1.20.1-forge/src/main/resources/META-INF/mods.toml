@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "[47,)"
 license = "MIT"
-issueTrackerURL = "https://modrinth.com/mod/discordpresence"
+issueTrackerURL = "https://github.com/TinsleyDevers/ZambieLib/issues"
 
 [[mods]]
 modId = "zambielib"
@@ -9,6 +9,7 @@ version = "1.0.0"
 displayName = "ZambieLib"
 logoFile = "icon.png"
 logoBlur = false
+displayURL = "https://modrinth.com/mod/zambielib"
 authors = "ZambieD"
 description = '''
 The shared engine room for ZambieD's mods. Interface drawing in the vanilla
