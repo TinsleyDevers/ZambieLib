@@ -4,3 +4,4 @@ run/
 runs/
 .idea/
 *.iml
+compat.json
